@@ -7,15 +7,15 @@ while(!end)
 {
     while ($bulbiz->life > 0 || $carapu->life > 0) {
         if($this->my_turn = TRUE) {
-            if($bulbiz->life <= 50)
+            if($bulbiz->life <= 50 && $stock <= 0)
             {
                 $potion_1->heal($bulbiz);
             }
-            elseif($bulbiz->life <= 30)
+            elseif($bulbiz->life <= 30 && $stock <= 0)
             {
                 $potion_2->heal($bulbiz);
             }
-            elseif($bulbiz->life <= 10)
+            elseif($bulbiz->life <= 10 && $stock <= 0)
             {
                 $potion_3->heal($bulbiz);
             }
