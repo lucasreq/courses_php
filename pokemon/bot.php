@@ -39,9 +39,7 @@ while(!end)
                 $bulbiz->attack($carapu);
                 $this->$my_turn = FALSE;
             }
-            
         }
-        
         else{
             $carapu->attack($bulbiz);
             $this->$my_turn = TRUE;
